@@ -28,6 +28,7 @@ public class Main {
         for(Object s: listaEjemplo.stream().toList()){
             System.out.println(s);
         }
+
         Function<String, String> convertidor = texto -> texto.toUpperCase();
         List<String> listaEnMayusculas = ConversorAMayus.ConversorAMayus(listaEjemplo, convertidor);
 
