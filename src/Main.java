@@ -20,6 +20,7 @@ public class Main {
         String textoConsola = scn.nextLine();
         List listadoIngresado;
         listadoIngresado = List.of(textoConsola.split(" "));
+
         System.out.println(listadoIngresado);
 
         List listaEjemplo= new ArrayList<String>();
@@ -30,6 +31,7 @@ public class Main {
         }
 
         Function<String, String> convertidor = texto -> texto.toUpperCase();
+
         List<String> listaEnMayusculas = ConversorAMayus.ConversorAMayus(listaEjemplo, convertidor);
 
         System.out.println(listaEjemplo);
